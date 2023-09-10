@@ -1,0 +1,536 @@
+/* Declaração de regra CSS para todos os elementos */
+* {
+  /* Remove os valores de margem e preenchimento de todos os elementos */
+  margin: 0;
+  padding: 0%;
+  /* Define o box-sizing de todos os elementos como border-box */
+  box-sizing: border-box;
+  /* Define a família de fontes de todos os elementos como Poppins, sans-serif */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Declaração de regra CSS para o elemento body */
+body {
+  /* Define a cor de fundo do corpo como preto */
+  background-color: black;
+  /* Define a altura do corpo como 100vh */
+  height: 100vh;
+}
+
+/* Declaração de regra CSS para o elemento .interface */
+.interface {
+  /* Define a largura máxima do elemento .interface como 1280px */
+  max-width: 1280px;
+  /* Centraliza o elemento .interface na página */
+  margin: 0 auto;
+}
+
+/* Declaração de regra CSS para o elemento .flex */
+.flex {
+  /* Define o display do elemento .flex como flex */
+  display: flex;
+}
+
+/* Declaração de regra CSS para o elemento .btn-contato button */
+.btn-contato button {
+  /* Define o padding do botão como 10px 40px */
+  padding: 10px 40px;
+  /* Define o tamanho da fonte do botão como 18px */
+  font-size: 18px;
+  /* Define o peso da fonte do botão como 600 */
+  font-weight: 600;
+  /* Define a cor de fundo do botão como #fff */
+  background-color: #fff;
+  /* Remove a borda do botão */
+  border: 0;
+  /* Define o raio da borda do botão como 30px */
+  border-radius: 30px;
+  /* Define o cursor do botão como pointer */
+  cursor: pointer;
+  /* Define a transição do botão como 0.2s */
+  transition: 0.2s;
+}
+
+/* Define uma regra CSS para a tag H2 com a classe 'titulo' */
+h2.titulo {
+  /* Define a cor da fonte como branco */
+  color: #fff;
+  /* Define o tamanho da fonte como 38px */
+  font-size: 38px;
+  /* Define o alinhamento do texto como centralizado */
+  text-align: center;
+}
+
+/* Define uma regra CSS para a tag H2 com a classe 'titulo' e para o elemento span interno */
+h2.titulo span {
+  /* Define a cor da fonte como cinza */
+  color: #5c5c5c;
+}
+
+/* Define uma regra CSS para os elementos button e input da classe 'btn-enviar' quando o mouse passa por cima deles */
+button:hover, form .btn-enviar input:hover {
+  /* Adiciona uma sombra ao botão */
+  box-shadow: 0px 0px 8px #fff;
+  /* Aumenta o tamanho do botão */
+  transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+
+/* Define a margem superior e lateral do elemento header */
+header {
+  padding: 40px 4%;
+}
+
+/* Define o display do elemento header como flexbox e alinha os itens no centro */
+header .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Define a cor do texto e remove o underline do elemento a */
+header a {
+  color: #5c5c5c;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+/* Define a cor do texto do elemento a ao passar o mouse por cima */
+header a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Remove o marcador de lista do elemento nav ul */
+header nav ul {
+  list-style-type: none;
+}
+
+/* Define o display do elemento nav ul como inline-block e adiciona um padding de 0px 40px */
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+/* Define a classe "topo-do-site" e aplica padding de 40px nas laterais e 4% na parte inferior */
+section.topo-do-site {
+  padding: 40px 4%;
+}
+
+/* Define a classe "flex" e aplica os alinhamentos "center" nas linhas e nas colunas, e um gap de 90px entre os elementos */
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+/* Define a classe "topo-do-site h1" e aplica as cores #fff, tamanho de fonte 42px e line-height de 40px ao elemento h1 */
+.topo-do-site h1 {
+  color: #fff;
+  font-size: 42px;
+  line-height: 40px;
+}
+
+/* Define a classe "txt-topo-site h1 span" e aplica a cor #5c5c5c ao texto dentro do elemento h1 */
+.topo-do-site .txt-topo-site h1 span {
+  color: #5c5c5c;
+}
+
+/* Define a classe "txt-topo-site p" e aplica as cores #fff e margin de 40px nas laterais ao elemento p */
+.topo-do-site .txt-topo-site p {
+  color: #fff;
+  margin: 40px 0;
+}
+
+/* Este código CSS posiciona a imagem do topo do site de forma relativa,
+   dá a ela um z-index de 1 para que ela fique acima de outros elementos na página,
+   e anima a imagem para que ela flutue para cima e para baixo a cada 2 segundos. */
+
+   .topo-do-site .img-topo-site img {
+    position: relative;
+    z-index: 1;
+    animation: flutuar 2s ease-in-out infinite alternate 1s;
+  }
+  
+  /* A animação flutuar é definida usando as propriedades @keyframes.
+     A propriedade top define a posição da imagem verticalmente.
+     No início da animação, a imagem está posicionada em 0px.
+     No final da animação, a imagem está posicionada em 30px. */
+  
+  @keyframes flutuar {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 30px;
+    }
+  }
+  
+
+/* ESTILO DAS EXPERIÊNCIAS */
+
+/* Este código define o estilo da seção "Experiencias". */
+
+section.experiencias {
+  /* Define o padding da seção para 40px nos lados e 4% da largura da seção. */
+  padding: 40px 4%;
+}
+
+section.experiencias .flex {
+  /* Define o gap entre os elementos flexíveis para 60px. */
+  gap: 60px;
+}
+
+.experiencias .experiencias-box {
+  /* Define a cor da fonte para #fff (branco). */
+  color: #fff;
+  /* Define o padding da caixa para 40px em todos os lados. */
+  padding: 40px;
+  /* Define o raio da borda da caixa para 20px. */
+  border-radius: 20px;
+  /* Define o espaço entre a caixa e o conteúdo acima dela para 45px. */
+  margin-top: 45px;
+  /* Define uma animação de transição de 0,2 segundos quando a caixa é sobrevoada. */
+  transition: .2s;
+}
+
+.experiencias .experiencias-box:hover {
+  /* Aplica uma transformação de escala de 1,05 à caixa quando ela é sobrevoada. */
+  transform: scale(1.05);
+  /* Aplica uma sombra de caixa de 0px 0px 8px #ffffff6c à caixa quando ela é sobrevoada. */
+  box-shadow: 0 0 8px #ffffff6c;
+}
+
+.experiencias .experiencias-box h3 {
+  /* Define o tamanho da fonte do cabeçalho para 28px. */
+  font-size: 28px;
+  /* Define o espaço entre o cabeçalho e o conteúdo abaixo dele para 15px. */
+  margin: 15px 0;
+}
+
+/* ESTILO DO SOBRE */
+
+/* Este código define o estilo da seção "Sobre" da página. */
+
+section.sobre {
+  /* Define a margem superior e lateral da seção. */
+  padding: 80px 4%;
+}
+
+section.sobre .flex {
+  /* Centraliza os elementos na seção. */
+  align-items: center;
+  /* Define o espaçamento entre os elementos. */
+  gap: 60px;
+}
+
+.sobre .img-sobre img {
+  /* Posiciona a imagem relativa ao topo da seção. */
+  position: relative;
+  /* Define o z-index da imagem para que ela fique por cima do texto. */
+  z-index: 1;
+  /* Anima a imagem fazendo-a flutuar para cima e para baixo. */
+  animation: flutuar 2s ease-in-out infinite alternate 1s;
+}
+
+@keyframes flutuar {
+  /* Posição inicial da imagem. */
+  0% {
+    top: 0;
+  }
+  /* Posição final da imagem. */
+  100% {
+    top: 30px;
+  }
+}
+
+.sobre .txt-sobre {
+  /* Define a cor do texto da seção. */
+  color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+  /* Define o tamanho da fonte do título. */
+  font-size: 40px;
+  /* Define a altura da linha do título. */
+  line-height: 40px;
+  /* Define o espaçamento entre o título e o texto abaixo dele. */
+  margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+  /* Define a cor do texto do título. */
+  color: #5c5c5c;
+  /* Exibe o texto do título como um bloco. */
+  display: block;
+}
+
+.sobre .txt-sobre p {
+  /* Define o espaçamento entre o texto do título e o texto abaixo dele. */
+  margin: 20px 0;
+  /* Define o alinhamento do texto como justificado. */
+  text-align: justify;
+}
+
+.btn-social button {
+  /* Define o tamanho do botão. */
+  width: 60px;
+  height: 60px;
+  /* Define o raio da borda do botão. */
+  border-radius: 30px;
+  /* Remove a borda do botão. */
+  border: none;
+  /* Define a cor de fundo do botão. */
+  background-color: #5c5c5c;
+  /* Define o tamanho da fonte do texto do botão. */
+  font-size: 20px;
+  /* Define o cursor do botão como um ponteiro. */
+  cursor: pointer;
+  /* Define o espaçamento entre os botões. */
+  margin: 0 5px;
+  /* Aplica uma transição de 0,2 segundos ao botão. */
+  transition: .2s;
+}
+
+/* ESTILO DO PORTFÓLIO */
+
+/* Esta seção define as propriedades CSS para a seção do portfólio. */
+section.portfolio {
+  padding: 80px 4%; /* Define o padding da seção para 80px nas laterais e 4% na parte inferior e superior. */
+  box-shadow: 0 0 40px 10px #ffffff09; /* Adiciona uma sombra à seção com um raio de 40px e um deslocamento de 10px. */
+}
+
+/* Esta classe define as propriedades CSS para o container flexível dentro da seção do portfólio. */
+section.portfolio .flex {
+  justify-content: space-around; /* Alinha os itens do container flexível uniformemente. */
+  margin-top: 60px; /* Define o margin-top do container flexível para 60px. */
+}
+
+/* Esta classe define as propriedades CSS para as imagens do portfólio. */
+.img-port {
+  width: 360px; /* Define a largura das imagens para 360px. */
+  height: 460px; /* Define a altura das imagens para 460px. */
+  background-size: cover; /* Define o tamanho da imagem de fundo para cobrir toda a área da imagem. */
+  background-position: 100% 0%; /* Define a posição inicial da imagem de fundo para 100% da largura e 0% da altura. */
+  transition: 8s; /* Define uma transição de 8 segundos para as imagens. */
+  cursor: pointer; /* Define o cursor para uma mão ao passar o mouse sobre as imagens. */
+  border-radius: 40px; /* Define o raio de borda das imagens para 40px. */
+  position: relative; /* Define a posição das imagens como relativa. */
+}
+
+/* Esta regra de estilo define o que acontece quando o mouse passa sobre as imagens. */
+.img-port:hover {
+  background-position: 100% 100%; /* Define a posição da imagem de fundo para 100% da largura e 100% da altura ao passar o mouse sobre as imagens. */
+}
+
+/* Esta classe define as propriedades CSS para a sobreposição das imagens do portfólio. */
+.overlay {
+  position: absolute; /* Define a posição da sobreposição como absoluta. */
+  top: 0; /* Define a posição superior da sobreposição para 0px. */
+  left: 0; /* Define a posição esquerda da sobreposição para 0px. */
+  width: 100%; /* Define a largura da sobreposição como 100%. */
+  height: 100%; /* Define a altura da sobreposição como 100%. */
+  background-color: #000000b8; /* Define a cor de fundo da sobreposição como preto semitransparente. */
+  border-radius: 40px; /* Define o raio de borda da sobreposição como 40px. */
+  display: flex; /* Exibe a sobreposição em um layout flexível. */
+  align-items: center; /* Alinha os itens da sobreposição no centro verticalmente. */
+  justify-content: center; /* Alinha os itens da sobreposição no centro horizontalmente. */
+  font-size: 24px; /* Define o tamanho da fonte da sobreposição para 24px. */
+  font-weight: 600; /* Define o peso da fonte da sobreposição para 600. */
+  color: #fff; /* Define a cor da fonte da sobreposição como branco. */
+  opacity: 0; /* Define a opacidade da sobreposição como 0. */
+  transition: .5s; /* Define uma transição de 0,5 segundos para a opacidade da sobreposição. */
+}
+
+/* Esta regra de estilo define o que acontece quando o mouse passa sobre as imagens. */
+.overlay:hover {
+  opacity: 1; /* Define a opacidade da sobreposição como 1 ao passar o mouse sobre as imagens. */
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO */
+
+/* Define a seção de formulário com padding de 80px nos lados e 4% na parte inferior */
+section.formulario {
+  padding: 80px 4%;
+}
+
+/* Define um formulário com largura máxima de 500px, margens auto,
+   display flex, justify-content center, flex-direction column, gap de 10px e margem superior de 40px */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+/* Define os inputs e textareas do formulário com largura de 100%,
+   background-color #5c5c5c31, borda 0, outline 0, padding de 20px 15px,
+   border-radius de 15px, cor #fff e tamanho da fonte 18px */
+form input, form textarea {
+  width: 100%;
+  background-color: #5c5c5c31;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Define o textarea do formulário com resize none e max-height de 200px */
+form textarea {
+  resize: none;
+  max-height: 200px;
+}
+
+/* Define um botão de envio com margem superior de 20px, text-align center
+   e um input com largura de 120px, background-color #fff, cor black,
+   font-weight 700, cursor pointer e transição de .2s */
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  background-color: #fff;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+}
+
+
+/* ESTILO DO RODAPÉ */
+
+footer {
+  /* Define o padding do footer para 40px nas laterais e 4% da largura da página na parte inferior */
+  padding: 40px 4%;
+  /* Adiciona uma sombra ao footer com um raio de 40px, um desfoque de 10px e uma cor de fundo de #ffffff09 (um tom de cinza claro) */
+  box-shadow: 0 0 40px 10px #ffffff09;
+}
+
+footer .flex {
+  /* Define o alinhamento justificado para os elementos filhos do footer */
+  justify-content: space-between;
+}
+
+footer .line-footer {
+  /* Define o padding do .line-footer para 18px na parte superior e inferior */
+  padding: 18px 0;
+}
+
+.borda {
+  /* Define uma borda superior de 4px sólida na cor #5c5c5c (um tom de cinza escuro) */
+  border-top: 4px solid #5c5c5c;
+}
+
+footer .line-footer p i {
+  /* Define a cor da fonte do ícone para #5c5c5c (um tom de cinza escuro) e o tamanho da fonte para 17px */
+  color: #5c5c5c;
+  font-size: 17px;
+}
+
+footer .line-footer p a {
+  /* Define a cor da fonte do link para #fff (branco) e remove o underline */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 1020px) {
+  
+  /* CLASSES GERAIS */
+
+  .flex{
+    flex-direction: column-reverse;
+  }
+
+  h2.titulo{
+    font-size: 34px;
+    line-height: 30px;
+  }
+
+  /* CABEÇALHO */
+
+  .menu-desktop, .btn-contato{
+    display: none;
+  }
+
+  /* TOPO DO SITE */
+
+  .section.topo-do-site .flex{
+    gap: 40px;
+  }
+
+  .section.topo-do-site{
+    padding: 20px 8%;
+  }
+
+  .topo-do-site h1{
+    font-size: 30px;
+  }
+
+  .topo-do-site .img-topo-site img {
+    width: 100%;
+  }
+
+  /* ESPECIALIDADES */
+
+  section.experiencias {
+    padding: 40px 8%;
+  }
+
+  /* SOBRE */
+  .section.sobre {
+    padding: 80px 8%;
+  }
+
+  .sobre .txt-sobre h2 {
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .btn-social{
+    text-align: center;
+  }
+
+  .img-sobre img{
+    width: 100%;
+  }
+
+  /* PORTFÓLIO */
+
+  section.portfolio{
+    padding: 80px 8%;
+  }
+
+  .img-port {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .section.portfolio .flex {
+    gap: 60px;
+
+    /* RODAPÉ */
+
+    footer .flex{
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    footer .line-footer {
+      text-align: center;
+    }
+  
+}
