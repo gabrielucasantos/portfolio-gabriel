@@ -296,6 +296,16 @@ section.sobre .flex {
   transition: .2s;
 }
 
+/* Define a cor de fundo e a cor do texto para os botões sociais */
+.btn-social button {
+  /* Cor de fundo */
+  background-color: #5c5c5c;
+  /* Cor do texto */
+  color: rgb(255, 255, 255);
+}
+
+
+
 /* ESTILO DO PORTFÓLIO */
 
 /* Esta seção define as propriedades CSS para a seção do portfólio. */
@@ -398,52 +408,77 @@ form .btn-enviar {
   text-align: center;
 }
 
+/* Define as propriedades do botão de envio do formulário */
 form .btn-enviar input {
+  /* Largura do botão */
   width: 120px;
+  /* Cor de fundo do botão */
   background-color: #fff;
+  /* Cor do texto do botão */
   color: black;
+  /* Peso da fonte do texto do botão */
   font-weight: 700;
+  /* Ponteiro do mouse sobre o botão */
   cursor: pointer;
+  /* Transição do botão */
   transition: .2s;
 }
 
 
+
 /* ESTILO DO RODAPÉ */
 
+/* Define o estilo do footer */
 footer {
-  /* Define o padding do footer para 40px nas laterais e 4% da largura da página na parte inferior */
-  padding: 40px 4%;
-  /* Adiciona uma sombra ao footer com um raio de 40px, um desfoque de 10px e uma cor de fundo de #ffffff09 (um tom de cinza claro) */
-  box-shadow: 0 0 40px 10px #ffffff09;
-}
-
-footer .flex {
-  /* Define o alinhamento justificado para os elementos filhos do footer */
-  justify-content: space-between;
-}
-
-footer .line-footer {
-  /* Define o padding do .line-footer para 18px na parte superior e inferior */
-  padding: 18px 0;
-}
-
-.borda {
-  /* Define uma borda superior de 4px sólida na cor #5c5c5c (um tom de cinza escuro) */
-  border-top: 4px solid #5c5c5c;
-}
-
-footer .line-footer p i {
-  /* Define a cor da fonte do ícone para #5c5c5c (um tom de cinza escuro) e o tamanho da fonte para 17px */
-  color: #5c5c5c;
-  font-size: 17px;
-}
-
-footer .line-footer p a {
-  /* Define a cor da fonte do link para #fff (branco) e remove o underline */
+  /* Cor de fundo */
+  background-color: #5c5c5c36;
+  /* Cor do texto */
   color: #fff;
+  /* Alinha o texto do footer ao centro */
+  text-align: center;
+  /* Adiciona um padding de 20px na parte superior e inferior do footer */
+  padding: 20px 0;
+  /* Adiciona um margin-top de 40px para o footer */
+  margin-top: 40px;
+}
+
+/* Define o estilo do container do footer */
+.container {
+  /* Define a largura do container como 100% */
+  width: 100%;
+  /* Define o display do container como flex */
+  display: flex;
+  /* Alinha os elementos do container ao centro */
+  justify-content: center;
+  /* Define a direção do flex como coluna */
+  flex-direction: column;
+}
+
+/* Define o estilo do texto de copyright */
+.copyright {
+  /* Define o tamanho da fonte do texto de copyright como 14px */
+  font-size: 14px;
+  /* Define o peso da fonte do texto de copyright como bold */
+  font-weight: bold;
+}
+
+/* Define o estilo do elemento link */
+.link {
+  /* Adiciona um margin-top de 10px para o elemento link */
+  margin-top: 10px;
+}
+
+/* Define o estilo dos links */
+a {
+  /* Define a cor do texto dos links como branco */
+  color: #fff;
+  /* Remove a decoração de texto dos links */
   text-decoration: none;
 }
 
+
+                                                             /* SITE RESPONSIVO */  
+                                                                   
 
 @media screen and (max-width: 1020px) {
   
